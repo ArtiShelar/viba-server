@@ -89,7 +89,7 @@ div {
 }
 
 #scrollingChat {
-  margin: 2px;
+  margin: 6px;
   overflow-y: auto;
   overflow-x: hidden;
   height: calc(100% - 4rem);
@@ -246,7 +246,7 @@ input:-moz-placeholder {
   display: block;
   margin-left: 5px;
   margin-right: 5px;
-  margin-bottom:1px;
+  margin-bottom:0px;
   border: 1px solid #f5f5dc;
   padding: 1px; 
   background-color:#FFFFFF;
