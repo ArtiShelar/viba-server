@@ -71,8 +71,8 @@ const toneAnalyzerCredentials = vcapServices.getCredentials('tone_analyzer');
 const discoveryCredentials = vcapServices.getCredentials('discovery');
 
 const discovery = watson.discovery({
-  password: discoveryCredentials.password,
-  username: discoveryCredentials.username,
+  password: 'NBXJhPUnRZbZ',
+  username: 'a234ee6e-8f25-4743-b40a-3fd97b10d1d1',
   version_date: '2017-10-16',
   version: 'v1'
 });
@@ -90,9 +90,9 @@ discoverySetup.setupDiscovery(discoverySetupParams, (err, data) => {
 
 // Create the service wrapper
 const conversation = watson.conversation({
-  url: conversationCredentials.url,
-  username: conversationCredentials.username,
-  password: conversationCredentials.password,
+  url: 'https://gateway.watsonplatform.net/conversation/api',
+  username:	'fe974321-6659-440b-8aa8-e7cd06a66e18',
+  password: 'WXgFgfrw5Z5c',
   version_date: '2016-07-11',
   version: 'v1'
 });
@@ -111,9 +111,9 @@ conversationSetup.setupConversationWorkspace(conversationSetupParams, (err, data
 });
 
 const toneAnalyzer = watson.tone_analyzer({
-  username: toneAnalyzerCredentials.username,
-  password: toneAnalyzerCredentials.password,
-  url: toneAnalyzerCredentials.url,
+  username: '990e3fd7-b2d3-471f-85fe-ec73be23a0d9',
+  password: 'SNmYUNiYGboh',
+  url: 'https://gateway.watsonplatform.net/tone-analyzer/api',
   version: 'v3',
   version_date: '2016-05-19'
 });
@@ -121,8 +121,8 @@ const toneAnalyzer = watson.tone_analyzer({
 /* ******** NLU ************ */
 const NaturalLanguageUnderstandingV1 = require('watson-developer-cloud/natural-language-understanding/v1.js');
 const nlu = new NaturalLanguageUnderstandingV1({
-  username: nluCredentials.username,
-  password: nluCredentials.password,
+  username: '15063c46-993d-4fbb-ad17-bf55762ff72c',
+  password: 'uAR4NOn8msYC',
   version_date: '2017-02-27'
 });
 
